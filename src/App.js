@@ -1,19 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
-import dogsDatabase from "./dogsDatabase";
-import DogCard from "./components/DogCard";
+import NavBar from "./components/NavBar";
+import Home from "./components/Home";
 
 function App() {
   return (
-    <div className="App">
-      <h1>Hello World!</h1>
-      <div className="main-content">
-        {dogsDatabase.map(el => (
-          <DogCard dog={el}></DogCard>
-        ))}
-      </div>
-    </div>
+    <>
+      <NavBar></NavBar>
+      <Home></Home>
+    </>
   );
 }
-//
 export default App;
